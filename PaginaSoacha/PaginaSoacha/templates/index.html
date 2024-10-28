@@ -1,0 +1,89 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <img src="{% static 'img/soacha-bienestar-1.png'%}" alt="logo de soacha" class="logo">
+        <nav class="header__nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#lugares">Lugares de interés</a></li>
+                <li class="nav__item"><a href="#gastronomia">Gastronomía</a></li>
+                <li class="nav__item"><a href="#actividades">Actividades</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="principal">
+
+        <section id="bienvenida" class="section">
+            <h2 class="section__title">Bienenido a Soacha</h2>
+
+            <p class="explicacion">
+                ¿Quieres descubrir qué puedes hacer en Soacha? Bienvenidos a Soacha, un lugar donde la naturaleza y la cultura se fusionan para ofrecer una experiencia única en Colombia. En este artículo, te llevaremos a través de los rincones más cautivadores de esta ciudad, desde sus paisajes naturales hasta su rica herencia cultural. Prepárate para explorar lo mejor de Soacha y sumergirte en sus maravillas. <br> 
+
+                Situada a pocos kilómetros al sur de Bogotá, Soacha es una joya escondida que combina la tranquilidad de la naturaleza con la vitalidad de la vida urbana. Sus montañas majestuosas, parques acogedores y tradiciones arraigadas te invitan a descubrir un destino que tiene algo para todos. Acompáñanos en este recorrido mientras exploramos los lugares más destacados de Soacha.
+            </p>
+        </section>
+
+        <section id="lugares" class="section">
+            <h2 class="section__title">Ecosistemas Variados</h2>
+
+            <p class="explicacion">
+                <b>Bosque Andino</b> <br> Cubierto de neblina, este bosque conserva una rica flora y fauna local. Veredas como Cascajal, El Charquito, Canoas y San Francisco ofrecen acceso a estas áreas cercanas al famoso Salto de Tequendama. <br><br>
+                <img src="{% static 'img/24466.jpg'%}" alt="lbosque andino" class="imgsoacha"><br><br>
+
+                <b>Páramo y Subpáramo</b> <br> Entre los 3,200 y los 4,700 metros sobre el nivel del mar, encontrarás este ecosistema ideal para senderismo y avistamiento de aves. Las veredas Romeral, Alto del Cabra y Hungría son excelentes opciones. <br><br>
+                <img src="{% static 'img/frailejón-páramo-sumapaz.jpg'%}" alt="paramo" class="imgsoacha"><br><br>
+
+                <b>Humedales</b> <br> Soacha también alberga humedales que vale la pena explorar.
+                Bosque Seco: A pesar de su área urbana, Soacha aún conserva zonas de bosque seco que merecen ser apreciadas. <br><br>
+                <img src="{% static 'img/3.jpg'%}" alt="humedal" class="imgsoacha"><br><br>
+            </p>
+        </section>
+    
+        <section id="gastronomia" class="section">
+            <h2 class="section__title">Gastronomía local</h2>
+            <p class="explicacion">
+                <b>Ajiaco Cundiboyacense</b> <br> El ajiaco es uno de los platos más emblemáticos de Soacha y de toda la región de Cundinamarca.
+            Esta deliciosa sopa se prepara con pollo, papa criolla, guasca y maíz.
+            Se sirve acompañada de alcaparras, crema de leche y aguacate, lo que le da un sabor único y reconfortante. <br><br>
+            <img src="{% static 'img/ajiaco.jpg'%}" alt="ajiaco" class="imgsoacha"><br><br>
+
+            <b>Changua</b> <br> La changua es otra joya culinaria de Soacha.
+            Se trata de una sopa a base de leche, agua y huevo, sazonada con cebolla y cilantro.
+            Es un desayuno típico que te llenará de energía para empezar el día con el pie derecho. <br><br>
+            <img src="{% static 'img/changua.png'%}" alt="changua" class="imgsoacha"><br><br>
+
+            <b>Puchero Bogotano:</b> <br> Este plato combina diferentes carnes (pollo, res y cerdo) con verduras como yuca, plátano, papa y mazorca.
+            Se cocina a fuego lento para que todos los sabores se fusionen y creen una explosión de sabor en cada bocado. <br><br>
+            <img src="{% static 'img/Puchero-Bogotano.jpg'%}" alt="pchero bogotano" class="imgsoacha"><br><br>
+
+            <b>Mazamorra</b> <br> La mazamorra chiquita es un postre tradicional de Soacha.
+            Se prepara con maíz, leche y panela, y es una delicia dulce y reconfortante que te transportará a la infancia. <br><br>
+            <img src="{% static 'img/mazamorra chiquita.JPG'%}" alt="mazamorra" class="imgsoacha"><br><br>
+            </p>
+        </section>
+    
+        <section id="actividades" class="section">
+            <h2 class="section__title">Actividades para disfrutar</h2>
+
+            <p class="explicacion">
+                Antes de convertirse en un anexo de Bogotá, Soacha era un lugar de escape para los bogotanos. Sus bosques eran ideales para la meditación y el avistamiento de aves.
+                Aunque la congestión vehicular ha afectado algunas actividades, aún puedes disfrutar de la naturaleza y la tranquilidad.
+            </p>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <p class="footer__text">© 2024 Turismo Soacha</p>
+    </footer>
+</body>
+</html>
